@@ -65,6 +65,7 @@ soundIcon.onclick=function(){
 //TIC TAC TOE 1 PERSON
 button1.onclick=function(){
   pianoSong.play();
+  soundIcon.src='style/soundOn.png';
 
   Array.from(squares).forEach(function(square){
     square.addEventListener('click',clickOutcome);
@@ -427,9 +428,6 @@ button2.onclick=function(){
       history=[-1,-1,-1,-1,-1,-1,-1,-1,-1];
       win_flag=false;
       tied_flag=false;
-      xResult.innerHTML='0';
-      oResult.innerHTML='0';
-      tieResult.innerHTML='0';
       for (let i = 0; i < 9; i++) {
         squares[i].classList.remove('playerX');
         squares[i].classList.remove('player0');
