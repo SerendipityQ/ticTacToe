@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title> Tic Tac Toe </title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="style/player0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+  <body>
+<section id='sec-1'>
+  <div class="container1">
+      <div class="title">
+          <img class="title-coffee" src="style/coffee6.png" alt="">
+          <span class="title-tictactoe">tic-tac-toe</span>
+      </div>
+
+      <div class="choose-person">
+          <a href="#sec-2">
+          <button  class="choose-person-1"><span class="choose-personNumber">1</span>
+            <img src="style/person.png" class="choose-personImage" alt="">
+          </button>
+
+          </a>
+
+          <a href='#sec-2'>
+          <button class="choose-person-2"><span class="choose-personNumber">2</span>
+            <img src="style/person.png" class="choose-personImage" alt="">
+            <img src="style/person.png"  class="choose-personImage" alt="">
+          </button>
+
+        </a>
+        </div>
+      </div>
+</section>
+
+
+<section id='sec-2'>
+  <div class="container2">
+    <div class="sound-icon">
+        <img id="sound-icon" src="style/soundOn.png" alt="">
+
+</div>
+  <h3 id='player'>X's Turn</h3>
+
+
+<div class="items-sec2">
+
+    <div class="grid">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+      <div id="result">
+        <h3 id="X-wins">Player X <br> <span class="X-result" style="font-size:200%">0</span></h3>
+          <h3 id="O-wins">Player O <br> <span style="font-size:200%" class="O-result">0</span></h3>
+          <h3 id="Ties">Tie <br> <span style="font-size:200%" class="tie-result">0</span></h3><br>
+
+          <a href='#sec-1'>
+          <button id='restart'>Restart</button>
+        </a>
+      </div>
+
+  </div>
+</div>
+</section>
+
+
+<audio id='pianoSong'>
+  <source src="style/pianoSong.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>

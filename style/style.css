@@ -1,0 +1,285 @@
+body{
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+}
+.container1,.container2{
+  height: 100vh;
+  width:100%;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+/*
+PAGE 1
+*/
+
+#sec-1{
+ height:100vh;
+ width:100%;
+  margin:0;
+  padding:0;
+  background:url(sec1-bg.jpg);
+}
+
+
+.title{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 4em;
+}
+
+.title-coffee{
+  width:35vh;
+  height: auto;
+  padding-bottom: none;
+  margin-bottom: none;
+}
+
+.title-tictactoe{
+  font-size: 11vh;
+  font-family: 'Raleway',sans-serif;
+  margin-top:none;
+ padding-top:none;
+ padding-left: .3em;
+ color: black;
+}
+
+/*
+BUTTONS
+PAGE 1
+*/
+
+
+.choose-person{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+
+}
+.choose-person-1{
+  border: 4px solid rgba(112, 66, 65);
+  background: -webkit-linear-gradient(transparent 50%,rgba(112, 66, 65,0.8) 50%);
+  border-radius: 1vh 1vh 7vh 7vh;
+  background-size:22vh 46vh;
+  height: 22vh;
+  width:22vh;
+  margin-right: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.choose-person-1:hover,.choose-person-2:hover{
+  cursor: pointer;
+  background-position: 0 -23.55vh;
+  transition: 1s;
+  border:none;
+}
+
+
+.choose-person-2{
+  border: 4px solid rgba(112, 66, 65);
+  background: -webkit-linear-gradient(transparent 50%,rgba(112, 66, 65,0.8) 50%);
+  border-radius: 1vh 1vh 7vh 7vh;
+  background-size:22vh 46vh;
+  height: 22vh;
+  width:22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-personNumber{
+  font-size:3.8vh;
+  font-family: 'Raleway',cursive;
+  font-weight: bold;
+  color:black;
+}
+
+.choose-personImage{
+  width:5vh;
+}
+
+
+
+/*
+PAGE
+2
+*/
+
+
+
+#sec-2{
+  height: 100vh;
+  width:100%;
+  margin:0;
+  padding:0;
+background:black;
+}
+
+.sound-icon{
+  margin-left:1vh;;
+  margin-top: 2vh;
+  margin-bottom: none;
+  display: inline-block;
+  float: left;
+}
+
+.sound-icon:hover{
+  cursor:pointer;
+}
+
+#sound-icon{
+  display: block;
+  height:4vh;
+  width:auto;
+}
+
+.items-sec2{
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+}
+
+.grid{
+  margin-top: 20px;
+  height: 28.75em;
+  width:28.75em;
+  background-color: white;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.grid div{
+  height:9.375em;
+  width:9.3em;
+  background-color: black;
+  margin-bottom:0.69vh;
+}
+
+#player{
+  color:white;
+  margin-bottom: none;
+  font-size: 4vh;
+font-family: 'Raleway', sans-serif;
+display:inline-block;
+text-align: center;
+margin-top: 2.63vh;
+margin-right: 1.40vh;
+}
+
+.playerX{
+  background: url(playerX.png);
+  background-repeat: no-repeat;
+  background-size:13.85vh auto;
+  background-position: center;
+}
+
+.player0{
+  background: url(player0.png);
+    background-size:13.85vh auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#result{
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  font-size: 2.3vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom:-90vh;
+  width:100%;
+  height:8.3vh;
+}
+
+#X-wins{
+  margin-right: 2.5rem;
+}
+
+#O-wins{
+  margin-right: 2.5rem;
+}
+
+#Ties{
+  margin-right: 2.5rem;
+}
+
+#restart{
+  font-family: 'Raleway',sans-serif;
+  font-weight: bold;
+  font-size: 2.3vh;
+  width: 10vh;
+  height: 8vh;
+  background: -webkit-linear-gradient(white 50%,rgba(112, 66, 65,0.8) 50%);
+  background-size:10vh 16vh;
+}
+
+#restart:hover{
+  color:white;
+  cursor: pointer;
+  background-position: 0 -8vh;
+  transition: 1s;
+}
+
+.horizontal::before{
+  content:'';
+  position: absolute;
+  margin-top:9.5vh;
+  margin-left: -9.5vh;
+  border-top:2vh solid rgba(112, 66, 65);
+  float: left;
+  width:20vh;
+  transform: rotate(0deg);
+}
+.vertical::before{
+  content:'';
+  position: absolute;
+  margin-top:9.5vh;
+  margin-left: -10vh;
+  border-top:2vh solid rgba(112, 66, 65);
+  float: left;
+  width:20vh;
+  transform: rotate(90deg);
+}
+
+.right_diagonal::before{
+  content:'';
+  position: absolute;
+  border-top: 2vh solid rgba(112, 66, 65);
+  margin-top: 10vh;
+  margin-left:-12.4vh;
+  width:27.5vh;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.left_diagonal::before{
+  content:'';
+  position: absolute;
+  border-top: 2vh solid rgba(112, 66, 65);
+  margin-top: 10vh;
+  margin-left:-16vh;
+  width:27.5vh;
+  transform: rotate(135deg);
+}
