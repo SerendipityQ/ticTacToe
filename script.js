@@ -45,6 +45,7 @@ restartButton.onclick=function(){
   tied_flag=0;
   xWins=0;
   tieWins=0;
+  window.location.reload();
 }
 
 
