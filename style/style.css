@@ -265,43 +265,12 @@ margin-right: 1.40vh;
   transition: 1s;
 }
 
-@media screen and (min-width: 600px) {
-.grid{
-  height:28.75em;
-  width:28.75em;
-}
-
-.grid div{
-  height:9.375em;
-  width:9.3em;
-}
-
-#restart{
-  margin-left:2vh;
-}
-#X-wins{
-  margin-right: 2.5rem;
-}
-
-#O-wins{
-  margin-right: 2.5rem;
-}
-
-#Ties{
-  margin-right: 2.5rem;
-}
-
-#result{
-  bottom:-90vh;
-}
-
-}
 
 
 .horizontal::before{
   content:'';
   position: absolute;
-  margin-top:9.5vh;
+  margin-top:7vh;
   margin-left: -9.5vh;
   border-top:2vh solid rgba(112, 66, 65);
   float: left;
@@ -338,4 +307,39 @@ margin-right: 1.40vh;
   margin-left:-16vh;
   width:27.5vh;
   transform: rotate(135deg);
+}
+
+@media screen and (min-width: 600px) {
+.grid{
+  height:28.75em;
+  width:28.75em;
+}
+
+.grid div{
+  height:9.375em;
+  width:9.3em;
+}
+
+#restart{
+  margin-left:2vh;
+}
+#X-wins{
+  margin-right: 2.5rem;
+}
+
+#O-wins{
+  margin-right: 2.5rem;
+}
+
+#Ties{
+  margin-right: 2.5rem;
+}
+
+#result{
+  bottom:-90vh;
+}
+
+.horizontal::before{
+  margin-top:9.5vh;
+}
 }
